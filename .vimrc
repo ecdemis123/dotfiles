@@ -25,3 +25,5 @@ map ntf :NERDTreeFind<CR>
 map fws :FixWhitespace<CR>
 map _d "_d
 map wf :FixWhitespace<CR> <bar> :w<CR>
+
+autocmd FileType go setlocal shiftwidth=8 tabstop=4
