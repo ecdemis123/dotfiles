@@ -7,6 +7,8 @@ set showcmd
 let g:CommandTAcceptSelectionMap = '<C-v>'
 let g:CommandTAcceptSelectionVSplitMap='<CR>'
 
+let g:go_fmt_command = "goimports"
+
 colorscheme triplejelly
 
 set number
@@ -26,4 +28,4 @@ map fws :FixWhitespace<CR>
 map _d "_d
 map wf :FixWhitespace<CR> <bar> :w<CR>
 
-autocmd FileType go setlocal shiftwidth=8 tabstop=4
+autocmd FileType go setlocal shiftwidth=4 tabstop=4
