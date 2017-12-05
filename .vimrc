@@ -6,6 +6,7 @@ set showcmd
 
 let g:CommandTAcceptSelectionMap = '<C-v>'
 let g:CommandTAcceptSelectionVSplitMap='<CR>'
+let NERDTreeShowHidden=1
 
 let g:go_fmt_command = "goimports"
 
