@@ -4,6 +4,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 function findyyml() { find ./ -type f -name '*yml' | xargs grep $1; }
+function linty() { git ls-files -m | xargs ls -1 2>/dev/null | grep '\.rb$' | xargs bundle exec rubocop -a }
 
 export VAULT_ADDR=https://vault-prod.shave.io:8200
 export GITHUB_TOKEN=blahblahblah
@@ -62,4 +63,5 @@ production-crashing-logs() {
 }
 
 export PATH="/Users/edemis/bin/Sencha/Cmd:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 PATH=$PATH:/Users/edemis/code/scripts
